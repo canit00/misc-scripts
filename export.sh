@@ -5,7 +5,7 @@
 # krew install https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 # have only run this from a mac, also may need to make file executable (chmod +x export.sh) 
 
-#  how to use: 
+# How to use: 
 # ./export.sh apps
 # ./export.sh projects
 
@@ -39,7 +39,7 @@ projects() {
 
 # Check the command-line arguments
 if [ $# -eq 0 ]; then
-    echo "No arguments provided. Usage: ./my_script.sh <name>"
+    echo "No arguments provided. Usage: ./export.sh <name>"
     exit 1
 fi
 
