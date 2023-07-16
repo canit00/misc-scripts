@@ -1,9 +1,13 @@
 #!/bin/bash
 
-# export and clean up ArgoCD apps and projects manifests to respective file
+# export and clean up ready-to-apply ArgoCD apps and projects manifests to a respective file
 # uses krew plugin: kubectl-neat to clean up manifest output https://github.com/itaysk/kubectl-neat
 # krew install https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 # have only run this from a mac, also may need to make file executable (chmod +x export.sh) 
+
+#  how to use: 
+# ./export.sh apps
+# ./export.sh projects
 
 apps_file="apps.yaml"
 projects_file="projects.yaml"
