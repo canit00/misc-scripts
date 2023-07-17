@@ -27,7 +27,6 @@ apps() {
 }
 
 projects() {
-    # Clear existing content in the projects file
     > "$projects_file"
 
     projects=$(kubectl get appprojects -n $namespace --no-headers -o custom-columns=":metadata.name")
@@ -38,7 +37,6 @@ projects() {
     done
 }
 
-# Check the command-line arguments
 if [ $# -eq 0 ]; then
     echo "No arguments provided. Usage: ./export.sh <name>"
     exit 1
