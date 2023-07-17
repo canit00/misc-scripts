@@ -27,6 +27,7 @@ apps() {
 }
 
 projects() {
+
     > "$projects_file"
 
     projects=$(kubectl get appprojects -n $namespace --no-headers -o custom-columns=":metadata.name")
